@@ -1,1 +1,4 @@
 # High-concurrency-Memory-Pool
+
+独立设计并实现了一个基于tcmalloc核心思想的高性能C++内存池。该项目旨在解决传统malloc在多线程高并发场景下因全局锁竞争导致的性能瓶颈，以及因内存碎片导致利用率低的问题。通过创新的三层缓存架构（ThreadCache-
+CentralCache-PageCache）和精细的内存管理策略，为服务器、游戏引擎等需要高频内存分配的应用提供了一个高效的分配器替代方案。
